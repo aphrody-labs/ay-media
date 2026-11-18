@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/ay-media-core",
+    "crates/ay-media-hls",
+]
+
+[workspace.package]
+edition = "2024"
+license = "Apache-2.0"
+version = "0.1.0"
+repository = "https://github.com/aphrody-dev/ay-media"
+
+[workspace.lints.rust]
+missing_docs = "warn"
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
