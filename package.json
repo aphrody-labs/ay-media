@@ -1,0 +1,19 @@
+{
+  "name": "@aphrody/ay-media",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Unified Rust, C, and NASM x86_64 media monorepo under aphrody-labs",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aphrody-labs/ay-media.git"
+  },
+  "scripts": {
+    "check": "bun tools/private-gate.ts && bun tools/forks.ts --check && bun tools/submodules.ts --check",
+    "forks:check": "bun tools/forks.ts --check",
+    "submodules:check": "bun tools/submodules.ts --check",
+    "sync": "bun tools/sync.ts --apply",
+    "private-gate": "bun tools/private-gate.ts"
+  }
+}

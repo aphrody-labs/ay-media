@@ -9,7 +9,7 @@ members = [
 edition = "2024"
 license = "Apache-2.0"
 version = "0.1.0"
-repository = "https://github.com/aphrody-dev/ay-media"
+repository = "https://github.com/aphrody-labs/ay-media"
 
 [workspace.lints.rust]
 missing_docs = "warn"
@@ -17,3 +17,19 @@ missing_docs = "warn"
 [workspace.lints.clippy]
 unwrap_used = "deny"
 expect_used = "deny"
+
+[profile.dev]
+split-debuginfo = "unpacked"
+incremental = true
+codegen-units = 16
+debug = "limited"
+
+[profile.dev.build-override]
+codegen-units = 16
+split-debuginfo = "unpacked"
+debug = "limited"
+
+[profile.release]
+codegen-units = 1
+debug = "limited"
+lto = "thin"

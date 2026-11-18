@@ -3,7 +3,8 @@
 
 [meta]
 org = "aphrody-labs"
-monorepo = "aphrody-dev/ay-media"
+consumer = "aphrody-labs"
+monorepo = "aphrody-labs/ay-media"
 
 [groups]
 vendor = "Upstream media forks (FFmpeg, yt-dlp, hyperframe, hls.js, dav1d, rav1e, SVT-AV1)"

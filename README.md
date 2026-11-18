@@ -1,6 +1,6 @@
 # ay-media
 
-Unified Rust, C, and low-level NASM x86_64 media monorepo for `aphrody-dev`, consolidating FFmpeg, `yt-dlp`, `hyperframe`, `hls.js`, `dav1d`, `rav1e`, and `SVT-AV1` forks under `aphrody-labs`.
+Unified Rust, C, and low-level NASM x86_64 media monorepo for `aphrody-labs`, consolidating FFmpeg, `yt-dlp`, `hyperframe`, `hls.js`, `dav1d`, `rav1e`, and `SVT-AV1` forks under `aphrody-labs`.
 
 ## Why
 
@@ -9,7 +9,7 @@ Legacy Node.js and Python media pipelines incur interpreter overhead and fragmen
 ## Install
 
 ```sh
-git clone --recursive https://github.com/aphrody-dev/ay-media.git
+git clone --recursive https://github.com/aphrody-labs/ay-media.git
 cd ay-media
 just check
 ```
