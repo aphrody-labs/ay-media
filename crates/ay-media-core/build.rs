@@ -1,3 +1,5 @@
+//! Build script for C and NASM x86_64 media kernels.
+
 use std::env;
 use std::path::PathBuf;
 use std::process::Command;
