@@ -1,21 +1,21 @@
 [submodule "vendor/ffmpeg"]
 	path = vendor/ffmpeg
-	url = ../ffmpeg.git
+	url = ../../aphrody-labs/ffmpeg.git
 [submodule "vendor/yt-dlp"]
 	path = vendor/yt-dlp
-	url = ../yt-dlp.git
+	url = ../../aphrody-labs/yt-dlp.git
 [submodule "vendor/hyperframe"]
 	path = vendor/hyperframe
-	url = ../hyperframe.git
+	url = ../../aphrody-labs/hyperframe.git
 [submodule "vendor/hls.js"]
 	path = vendor/hls.js
-	url = ../hls.js.git
+	url = ../../aphrody-labs/hls.js.git
 [submodule "vendor/dav1d"]
 	path = vendor/dav1d
-	url = ../dav1d.git
+	url = ../../aphrody-labs/dav1d.git
 [submodule "vendor/rav1e"]
 	path = vendor/rav1e
-	url = ../rav1e.git
+	url = ../../aphrody-labs/rav1e.git
 [submodule "vendor/svt-av1"]
 	path = vendor/svt-av1
-	url = ../svt-av1.git
+	url = ../../aphrody-labs/svt-av1.git
