@@ -1,6 +1,5 @@
 # ay-media Agent Guidelines
 
-- Use `just check` (`private-gate`, `forks-check`, `submodules-check`, `rust-check`).
-- Never use `.unwrap()` or `.expect()` in non-test Rust code.
-- Keep `ay-media-hls` `#![forbid(unsafe_code)]`; document `// SAFETY:` on every `unsafe` FFI call in `ay-media-core`.
+- The Rust, C and NASM crates are owned by `aphrody-labs/ay`; this repository only tracks the media forks (`forks.toml`, `.gitmodules`).
+- Use `just check` (`private-gate`, `forks-check`, `submodules-check`).
 - Never commit private IPs, IDs, or machine paths.

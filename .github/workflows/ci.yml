@@ -7,15 +7,13 @@ on:
     branches: [main]
 
 jobs:
-  rust-c-nasm:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install NASM
-        run: sudo apt-get update && sudo apt-get install -y nasm
-      - uses: dtolnay/rust-toolchain@1.100.0
+      - uses: oven-sh/setup-bun@v2
         with:
-          components: rustfmt, clippy
-      - run: cargo fmt --all -- --check
-      - run: cargo clippy --workspace --all-targets -- -D warnings
-      - run: cargo test --workspace
+          bun-version: canary
+      - run: bun tools/private-gate.ts
+      - run: bun tools/forks.ts --check
+      - run: bun tools/submodules.ts --check

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Unified Rust, C, and NASM x86_64 media monorepo under aphrody-labs",
+  "description": "Fork mirror of the media upstreams under aphrody-labs",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
