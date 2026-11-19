@@ -16,6 +16,8 @@ just check
 
 ## Development
 
+The forks, submodules and sync tools are owned by `aphrody-labs/ay-vercel`: set `AY_VERCEL` to a checkout of it (CI checks it out).
+
 - `just check` runs the privacy gate, `forks.toml` parity and submodule pin checks.
 
 ## License

@@ -15,5 +15,12 @@ jobs:
         with:
           bun-version: canary
       - run: bun tools/private-gate.ts
-      - run: bun tools/forks.ts --check
-      - run: bun tools/submodules.ts --check
+      - uses: actions/checkout@v4
+        with:
+          repository: aphrody-labs/ay-vercel
+          path: .ay-vercel
+          sparse-checkout: tools
+          persist-credentials: false
+      - run: echo "AY_VERCEL=$GITHUB_WORKSPACE/.ay-vercel" >> "$GITHUB_ENV"
+      - run: bun "$AY_VERCEL/tools/forks.ts" --check
+      - run: bun "$AY_VERCEL/tools/submodules.ts" --check
